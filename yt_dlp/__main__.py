@@ -13,5 +13,10 @@ if __package__ is None and not getattr(sys, 'frozen', False):
 
 import yt_dlp
 
+def abcd():
+        return yt_dlp.YoutubeDL({}).extract_info('https://www.youtube.com/watch?v=CJDEtfA33VI', False)
+
 if __name__ == '__main__':
-    yt_dlp.main()
+    # yt_dlp.main()
+    abcd()
+    
